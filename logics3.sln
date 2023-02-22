@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33130.400
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "logics3", "logics3\logics3.csproj", "{69569070-E508-4458-BB11-78A702A92956}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69569070-E508-4458-BB11-78A702A92956}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69569070-E508-4458-BB11-78A702A92956}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69569070-E508-4458-BB11-78A702A92956}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69569070-E508-4458-BB11-78A702A92956}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {67091E93-4710-47CA-B88F-DD431BA322D7}
+	EndGlobalSection
+EndGlobal
