@@ -1,21 +1,21 @@
 ﻿using System;
 
-namespace count_zeros
+namespace lucky_number
 {
     class Program
     {
         static void Main(string[] args)
         {
             Console.Write("Enter a number : ");
-            int num = Convert.ToInt32(Console.ReadLine());
-            int count = 0;
-            while (num > 0)
+            int n = Convert.ToInt32(Console.ReadLine());
+            int sum = 0;
+            while (n != 0)
             {
-                if (num % 10 == 0)
-                    count++;
-                num = num / 10;
+                sum = sum + n % 10;
+                n = n / 10;
             }
-            Console.WriteLine("Number of Zero's in the given number : " + count);
+            sum = sum % 10 + sum / 10 % 10 + sum / 100 % 10;
+            Console.WriteLine("Lucky Number : "+sum);
         }
     }
 }
