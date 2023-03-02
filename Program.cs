@@ -1,26 +1,22 @@
 ﻿using System;
 
-namespace prime
+namespace array1
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter a number : ");
-            int n = int.Parse(Console.ReadLine());
-            int count = 0;
-            for (int i = 2; i < n; i++)
+            int n, sum = 0;
+            Console.Write("Enter Array Length : ");
+            n = int.Parse(Console.ReadLine());
+            int[] A = new int[n];
+            for (int i = 0; i < n; i++)
             {
-               if (n % i == 0)
-               {
-                  count++;
-                  break;
-               }
+                Console.Write("Enter the element A["+i+"] : ");
+                A[i] = int.Parse(Console.ReadLine());
+                sum = sum + A[i];
             }
-            if (count > 0)
-                Console.WriteLine(n+" is Not Prime number");
-            else
-                Console.WriteLine(n+" is Prime number");
+            Console.WriteLine("\nSum of Array Elements : " + sum);
         }
     }
 }
