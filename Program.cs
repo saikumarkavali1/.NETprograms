@@ -1,21 +1,34 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace lucky_number
+namespace ConsoleApp3
 {
     class Program
     {
+        abstract class ClsEMp
+        {
+            public abstract void GetEmp(int eno, string ename);
+        }
+        class ClsDept : ClsEMp
+        {
+            public override void GetEmp(int eno, string ename)
+            {
+                Console.WriteLine(eno + " " + ename);
+            }
+            public void GetDept(int dno,string dname)
+            {
+                Console.WriteLine(dno + " " + dname);
+            }
+        }
         static void Main(string[] args)
         {
-            Console.Write("Enter a number : ");
-            int n = Convert.ToInt32(Console.ReadLine());
-            int sum = 0;
-            while (n != 0)
-            {
-                sum = sum + n % 10;
-                n = n / 10;
-            }
-            sum = sum % 10 + sum / 10 % 10 + sum / 100 % 10;
-            Console.WriteLine("Lucky Number : "+sum);
+            ClsDept obj = new ClsDept();
+            obj.GetEmp(101, "vijay");
+            obj.GetDept(10, "Accounting");
+            Console.Read();
         }
     }
 }
